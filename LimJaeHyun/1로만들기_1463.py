@@ -1,7 +1,7 @@
 N = int(input())
 
 memo = [0] * (10 ** 6)
-memo[1] = 1
+memo[1] = 0
 memo[2] = 1
 memo[3] = 1
 

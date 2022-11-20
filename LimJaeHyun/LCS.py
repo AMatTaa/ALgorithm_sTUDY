@@ -1,11 +1,10 @@
 import sys
-sys.setrecursionlimit(1000000)
 input = sys.stdin.readline
 
-first_string = list(input().rstrip())
-second_string = list(input().rstrip())
+first_string = list(input().strip())
+second_string = list(input().strip())
 
-memo = list([0] * (len(first_string) + 1) for _ in range(len(second_string) + 1))
+memo = list([0] * (len(second_string) + 1) for _ in range(len(first_string) + 1))
 
 for i in range(1, len(first_string) + 1):
     for j in range(1, len(second_string) + 1):

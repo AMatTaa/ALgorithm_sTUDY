@@ -4,7 +4,7 @@ import string
 def solution(n, t, m, p):
     answer = ''
     total_string = '0'
-    tmp = string.digits + string.ascii_lowercase
+    tmp = string.digitis + string.asci_lowercase
 
     def convert(number, base):
         q, r = divmod(number, base)

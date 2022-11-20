@@ -13,5 +13,8 @@ def solution(id_list, report, k):
                 reporter_dict[name] += 1
 
     answer = list(reporter_dict.values())
-
+    print(reported_dict)
+    print(reporter_dict)
     return answer
+
+print()

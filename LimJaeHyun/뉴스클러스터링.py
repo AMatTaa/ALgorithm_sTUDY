@@ -8,7 +8,6 @@ def solution(str1, str2):
     for i in range(0, len(str1)):  # 유효한 것들 리스트로 만들기 (집합이지만 집합 연산을 사용할 수 없다.)
         try:
             if str(str1[i] + str1[i+1]).isalpha():
-
                 set1.append(str(str1[i] + str1[i+1]).upper())
         except IndexError:
             continue
